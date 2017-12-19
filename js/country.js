@@ -15,7 +15,7 @@ $(function () {
     //点击索引查询城市
     $('body').on('click', '.letter a', function () {
         var s = $(this).html();
-        $(window).scrollTop($('#' + s + '1').offset().top);
+        $(window).scrollTop($('#' + s + '1').offset().top-40);
         $("#showLetter span").html(s);
         $("#showLetter").show().delay(500).hide(0);
     });
